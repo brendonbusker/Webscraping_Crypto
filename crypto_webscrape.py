@@ -57,7 +57,7 @@ stock_counter = 1
 excel_counter = 1
 price_list = []
 
-for x in range(38):
+for x in range(0, int(len(stock_data)/10)):
     # This splits up the Symbol from the name
     name = stock_data[stock_counter].text
     symbol = name[1:name.index('USD')+3]
